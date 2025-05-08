@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 int main() {
-  int qtd;
+  int i, qtd;
   char nomes[10][100];
   float notas[10];
   printf("\nQuantos alunos deseja cadastrar? (max 10)\n");
@@ -12,7 +12,6 @@ int main() {
     printf("\nQuantidade invalida, deve ser entre 1 e  10\n");
     return 1;
   }
-  int i;
   for (i = 0; i < qtd; i++){
     printf("\nDigite o nome do aluno %d: \n", i + 1);
     fgets(nomes[i], sizeof(nomes[i]), stdin);
