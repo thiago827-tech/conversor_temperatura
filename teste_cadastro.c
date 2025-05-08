@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 int main() {
   int qtd;
   char nomes[10][100];
   float notas[10];
   printf("Quantos alunos deseja cadastrar? (max 10)");
   scanf("%d", &qtd);
+  getchar();
   if(qtd< 1 || qtd > 10){
     printf("Quantidade invalida, deve ser entre 1 e  10\n");
     return 1;
@@ -16,6 +18,7 @@ int main() {
     nomes[i][strcspn(nomes[i], "\n")]= '\0';
     printf("Digite a nota  do aluno %d: ", i+1);
     scanf("%f", &notas[i]);
+    getchar();
   }
   printf("\nAlunos Cadastrados: \n");
   for(int i = 0 < qtd; i++){
