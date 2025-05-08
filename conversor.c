@@ -8,4 +8,5 @@ scanf("%f", &c);
 f=(c*1.8)+32;
 printf("\nO valor da temperatura e: %.1f Fahrenheit\n", f);
 printf("\nObrigado por testar o programa :)\n");
+system(pause);
 }
