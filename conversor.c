@@ -7,4 +7,5 @@ printf("/nInforme o valor da temperatura em celsius que deseja converter para fa
 scanf("%f", &c);
 f=(c*1.8)-32;
 printf("/nO valor da temperatura e: %.1f F°/n", f);
+printf("/nObrigado por testar o programa :)/n");
 }
