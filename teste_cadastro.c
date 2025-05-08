@@ -9,7 +9,7 @@ int main() {
   scanf("%d", &qtd);
   getchar();
   if(qtd< 1 || qtd > 10){
-    printf("\nQuantidade invalida, deve ser entre 1 e  10\n");
+    printf("\nQuantidade invalida, deve ser entre 1 e 10\n");
     return 1;
   }
   for (i = 0; i < qtd; i++){
