@@ -10,10 +10,10 @@ int main() {
     printf("Quantidade invalida, deve ser entre 1 e  10\n");
     return 1;
   }
-  for(int i= 0; i < qtd; i++){
+  for(int i = 0; i < qtd; i++){
     printf("Digite o nome do aluno %d: ", i + 1);
     fgets(nomes[i], sizeof(nomes[i]), stdin);
-    nomes[i][strcspn(nomes[i], "\n")]= '0';
+    nomes[i][strcspn(nomes[i], "\n")]= '\0';
     printf("Digite a nota  do aluno %d: ", i+1);
     scanf("%f", &notas[i]);
   }
